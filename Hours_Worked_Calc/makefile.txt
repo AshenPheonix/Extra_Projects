@@ -1,0 +1,8 @@
+hoursWorked: bstdlib.o main.o
+	g++ bstdlib.o main.o -o Hours_Worked
+
+main.o: main.cpp
+	g++ -c main.cpp -o main.o
+
+bstdlib.o: bstdlib.h bstdlib.cpp
+	g++ -c bstdlib.cpp -o bstdlib.o
